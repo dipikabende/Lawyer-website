@@ -51,7 +51,7 @@ const Navbar = () => {
         <button
           className="menu-icon"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          // aria-label="Toggle menu"
         >
           <span></span>
           <span></span>
