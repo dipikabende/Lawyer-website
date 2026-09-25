@@ -1,0 +1,185 @@
+.services-section {
+  width: 100%;
+
+  background: #faf9f7;
+
+  padding: 70px 0;
+}
+
+.services-container {
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 0 45px;
+}
+
+.services-container  h2 {
+  /* font-family: Georgia, "Times New Roman", serif; */
+   font-family: serif;
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  color: #171717;
+
+  margin-bottom: 12px;
+}
+
+.services-description {
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  max-width: 500px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Cards */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.service-card {
+  background: white;
+
+  border: 1px solid #dedede;
+
+  border-radius: 5px;
+
+  padding: 25px 20px;
+
+  min-height: 205px;
+
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  border-color: #d4a453;
+}
+
+.service-icon {
+  color: #c18b37;
+
+  font-size: 60px;
+
+  margin-bottom: 5px;
+}
+
+.service-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+
+  margin-bottom: 10px;
+
+  color: #222;
+}
+
+.service-card p {
+  color: #5b5e61;
+
+  font-size: 15px;
+
+  line-height: 1.5;;
+
+  margin-bottom: 15px;
+}
+
+.service-card a {
+  color: #8f611e;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* View all */
+
+.services-button {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.services-button a {
+  background: #e3b35c;
+
+  color: #151515;
+
+  padding: 13px 25px;
+
+  border-radius: 25px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .services-container {
+    padding: 0 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-container > h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .services-section {
+    padding: 50px 0;
+  }
+
+  .services-container {
+    padding: 0 20px;
+  }
+
+  .services-container > h2 {
+    font-size: 29px;
+  }
+
+  .services-container > h2 br {
+    display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .service-card {
+    min-height: auto;
+
+    padding: 22px;
+  }
+}

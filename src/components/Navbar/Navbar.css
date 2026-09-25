@@ -1,0 +1,217 @@
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #111;
+  color: #ffffff;
+  /* background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+.logo{
+  display: flex;
+  gap: 4px;
+  
+}
+
+  
+
+/* Desktop Menu */
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-link {
+  text-decoration: none;
+  /* color: #222; */
+  color: #eeeeee;
+  font-size: 17px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #b08d57;
+}
+
+.nav-link.active {
+  color: #b08d57;
+}
+
+.consultation-btn {
+  background: #e4b45f;
+  color: #111;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Hamburger */
+
+.menu-icon {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: #222;
+  border-radius: 5px;
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar-container {
+    padding: 12px 20px;
+  }
+ 
+
+  .mobile-menu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* Initially hidden */
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.3s ease;
+  }
+   /* Desktop consultation hide */
+  .consultation-btn {
+    display: none;
+  }
+
+  .mobile-menu.show-menu {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #222;
+
+    padding: 15px 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    color: #b08d57;
+  }
+
+  .mobile-menu a.active {
+    color: #b08d57;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .navbar-container {
+    padding: 10px 15px;
+  }
+  .navbar-container .logo{
+    width: 50px;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+
+  .menu-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .menu-icon span {
+    width: 23px;
+  }
+
+   /* Desktop consultation hide */
+  .consultation-btn {
+    display: none;
+  }
+}
+
