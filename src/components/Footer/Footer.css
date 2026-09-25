@@ -131,64 +131,94 @@
 
 /* Tablet */
 
+/* Tablet & Laptop (Max-width: 900px) */
 @media (max-width: 900px) {
-
   .footer-container {
-    padding: 0 30px;
-
+    padding: 0 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-links {
     order: 3;
-
     width: 100%;
-
     justify-content: center;
+    margin-top: 15px;
   }
 
   .copyright {
-    padding-left: 30px;
-    padding-right: 30px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
   }
 }
 
-
-/* Mobile */
-
+/* Mobile Devices (Max-width: 600px) */
 @media (max-width: 600px) {
-
   .footer {
-    padding-top: 35px;
+    padding-top: 30px;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .footer-container {
-    padding: 0 20px;
-
+    padding: 0 15px;
+    display: flex;
     flex-direction: column;
-
+    align-items: center; 
+    justify-content: center;
     text-align: center;
+    box-sizing: border-box;
+    width: 100%;
   }
 
-  .footer-container img {
-    width: 180px;
+
+  .footer-container img,
+  .footer-container svg {
+    max-width: 120px;
+    height: auto;
+    margin: 0 auto 10px auto;
+  }
+
+  /* लोगो के पास का टेक्स्ट (ATHARVA ASSOCIATES वाला भाग) */
+  .footer-container h1, 
+  .footer-container h2, 
+  .footer-container h3,
+  .footer-container p,
+  .footer-brand,
+  .footer-info {
+    max-width: 100%;
+    word-break: break-word; 
+    text-align: center;
+    margin: 0 auto;
   }
 
   .footer-links {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    width: 100%;
+  }
 
-    gap: 18px;
+  .footer-links a {
+    font-size: 14px;
   }
 
   .social-links {
-    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
   }
 
   .copyright {
-    padding: 20px;
-
-    font-size: 9px;
+    padding: 15px 10px;
+    font-size: 11px;
+    text-align: center;
+    word-break: break-word;
   }
 }

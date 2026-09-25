@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { NavLink } from "react-router";
+import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <NavLink to="/" className="logo" onClick={closeMenu}>
-          <img src="/src/assets/logo.png" alt="Atharva Associate" />  
+          <img src={logo} alt="Atharva Associate" />  
         </NavLink>
 
         {/* Desktop Menu */}
